@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 600px;
+    height: 900px;
+    background-color: cadetblue;
+}
+
+
+
+/* DURA static */
+
+#p1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: static;
+}
+
+
+
+/* OBEDIENTE relative
+top
+lef + - */
+
+#p2{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: relative;
+}
+
+/* REBELDE en base al origen de la pagina
+absolute
+top 
+left nro/0 */
+
+#p3{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: absolute;
+    left: 300px;
+}
+
+
+
+/* fixed
+top
+nro/0 */
+
+#p4{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    position: fixed;
+}

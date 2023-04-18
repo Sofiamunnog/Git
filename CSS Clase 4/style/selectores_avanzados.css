@@ -1,0 +1,153 @@
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.linea{
+    display: inline-block;
+    margin-right: 500px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ----------Selectores Avanzados---------- */
+
+
+/* Selector agrupado: se aplica todas
+las reglas a todas las etiquetas 
+separadas por coma. Ej: extraer
+el padding de varias etiquetas 
+semanticas*/
+
+nav, header, div, aside{
+    padding: 0px;
+}
+
+/* Selector descendente: se aplica la 
+regla a toda etiqueta contenida dentro 
+del contenedor indicado, separando
+por espacio
+etiqueta_contenedor etiqueda_afectada{}  */
+
+div, p{
+    background-color: lightskyblue;
+}
+
+#d1 p{
+    background-color: darkseagreen;
+}
+
+/* Selector hijos directos: especifica 
+la relación padre e hijo directo
+etiqueta_padre > etiqueta_hijo{}
+ */
+
+section > p{
+    color: brown;
+    font-size: xx-large;
+}
+
+/* Selector hijos no directos: especifica 
+la relación padre y cualquier hijo
+etiqueta_padre * etiqueta_hijo{}
+ */
+
+section * p{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Selector hermanos adyacentes: aplica
+la regla a dos etiquetas que sean consecutivas
+titulo + subtitulo{} */
+
+h1 + h2{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Selector general hermanos 
+titulo ~ subtitulo{}*/
+
+h1 ~ h2{
+    color: crimson;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* -----------Pseudoclases--------------- */
+/* Aplicados a los hipervínculos, cambiar color*/
+/* :hover */
+
+a:hover{
+    color: brown;
+    background-color: cyan;
+}
+
+/* :link */
+
+a:link{
+    background-color: darkkhaki;
+}
+
+/* :activate */
+
+a:active{
+    background-color: orangered;
+}
+
+/* :visited */
+
+a:visited{
+    color: black;
+}
+
+/* Primer hipervinculo
+:first-child */
+
+a:first-child{
+    color: darkgreen;
+    font-size: xx-large;
+}
+
+/* Último elemento 
+:last-child */
+
+a:last-child{
+    color: violet;
+    font-size: xx-large;
+}
+
+/* Cualquier elemnto por posición */
+/* :nth-child(ubicación) */
+
+
+
+/* ------------Pseudoelementos */
+/* Aplicar propiedad a primer letra del párrafo
+::first-letter */
+
+p::first-letter{
+    color: black;
+    font-size: xx-large;
+}
+
+/* Aplicar propiedad a primer línea del párrafo
+::first-line */
+
+p::first-line{
+    background-color: indianred;
+}
+
+/* Aplicar propiedad a una selección del párrafo
+::selection */
+
+p::selection{
+    color: burlywood;
+}
